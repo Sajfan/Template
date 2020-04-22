@@ -40,6 +40,11 @@ body {
     font-size: 18vw;
     color: #fff;
     line-height: 1em;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
 }
 
 #container .content h4 {
@@ -52,12 +57,22 @@ body {
     font-weight: 300;
     padding: 10px 20px;
     display: inline-block;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
 }
 
 #container .content p {
 	cursor: default;
     color: #fff;
     font-size: 1.2em;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
 }
 
 #container .content a {
