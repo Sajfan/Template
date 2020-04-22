@@ -36,12 +36,14 @@ body {
 }
 
 #container .content h2 {
+	cursor: default;
     font-size: 18vw;
     color: #fff;
     line-height: 1em;
 }
 
 #container .content h4 {
+	cursor: default;
     position: relative;
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -53,6 +55,7 @@ body {
 }
 
 #container .content p {
+	cursor: default;
     color: #fff;
     font-size: 1.2em;
 }
