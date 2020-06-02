@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #383838;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardSlider {
+    position: relative;
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.cardSlider .contentSlider {
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.cardSlider .contentSlider a {
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: #262626;
+    font-weight: 600;
+}
+
+.cardSlider .sliderText {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.cardSlider .sliderText h3 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.swiper-slide {
+    width: 400px;
+}
