@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #ddd;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section .leftBox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+section .leftBox .contentBox {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    padding: 40px;
+    transition: .5s;
+}
+
+section .leftBox .contentBox:hover {
+    background: #e91e63;
+}
+
+section .leftBox .contentBox h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .leftBox .contentBox p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section .eventsBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    float: right;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+section .eventsBox ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 40%;
+}
+
+section .eventsBox ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    width: 42vw;
+    margin: 15px 0;
+}
+
+section .eventsBox ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+section .eventsBox ul li:hover .time {
+    background: #e91e63;
+}
+
+section .eventsBox ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+
+section .eventsBox ul li .time h2 span {
+    font-size: 30px;
+}
+
+section .eventsBox ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+section .eventsBox ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+section .eventsBox ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section .eventsBox ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+    color: #000;
+}
+
+section .eventsBox ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+@media(max-width: 991px) {
+    section {
+        height: 100%;
+        background-position: center;
+    }
+
+    section .leftBox {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+
+    section .leftBox .contentBox {
+        padding: 20px;
+    }
+
+    section .leftBox .contentBox h1{
+        font-size: 30px;
+    }
+
+    section .eventsBox {
+        width: 100%;
+        height: auto;
+        background: transparent;
+        float: none;
+    }
+
+    section .eventsBox ul {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+        margin-top: 0;
+    }
+
+    section .eventsBox ul li {
+        background: rgba(255, 255, 255, .8);
+        width: auto;
+    }
+
+    section .eventsBox ul li .time {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+
+    section .eventsBox ul li .time h2 {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    section .eventsBox ul li .time h2 span {
+        font-size: 20px;
+    }
+
+    section .eventsBox ul li .details {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+
+    section .eventsBox ul li .details a {
+        padding: 5px 10px;
+    }
+
+}
